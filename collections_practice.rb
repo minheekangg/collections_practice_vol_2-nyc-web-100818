@@ -52,6 +52,8 @@ def merge_data(keys, data)
       if k == name
       end
       end
+    end
+  end
   end
   return data
 end
