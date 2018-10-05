@@ -43,7 +43,7 @@ end
 
 
 def merge_data(keys, data)
-  keys.each do |k,v|
+  keys.to_h.each do |k,v|
     data.each do |name, data|
       puts k
       puts name
