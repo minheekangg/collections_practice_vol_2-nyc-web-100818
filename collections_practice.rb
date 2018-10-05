@@ -43,12 +43,12 @@ end
 
 
 def merge_data(keys, data)
-  keys.flatten.each do |k,v|
-    k.each do |label, v2|
+  keys.flatten.each do |lower_keys ,do_not_use|
+    lower_keys.each do |label, key_name|
     data.flatten.each do |name, needed_data|
       name.each do |key, value|
-      if v2 == key
-        puts needed_data
+      if key_name == key
+        puts value
       end
       end
     end
