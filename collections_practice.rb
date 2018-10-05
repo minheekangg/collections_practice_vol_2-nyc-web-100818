@@ -45,6 +45,8 @@ end
 def merge_data(keys, data)
   keys.each do |k,v|
     data.each do |name, data|
+      puts k
+      puts name
       if k == name
         puts k
       end
