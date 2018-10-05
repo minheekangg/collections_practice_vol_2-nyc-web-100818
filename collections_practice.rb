@@ -48,7 +48,6 @@ def merge_data(keys, data)
       puts k
       puts name
       if k == name
-        puts k
       end
       end
   end
