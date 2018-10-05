@@ -44,12 +44,14 @@ end
 
 def merge_data(keys, data)
   new_hash = {}
+  new_data = []
   keys.flatten.each do |lower_keys ,do_not_use|
     lower_keys.each do |label, key_name|
     data.flatten.each do |name, needed_data|
       name.each do |key, value|
       if key_name == key
         new_hash = value.merge(lower_keys)
+        new_data << new_hash
       end
       end
     end
