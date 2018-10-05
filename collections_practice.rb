@@ -50,7 +50,7 @@ def merge_data(keys, data)
       name.each do |key, value|
       if key_name == key
         new_hash = name
-       new_hash[key] = {:first_name = key.to_s}
+       new_hash[key] = {:first_name => key.to_s}
       end
       end
     end
