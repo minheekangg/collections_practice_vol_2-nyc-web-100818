@@ -49,7 +49,7 @@ def merge_data(keys, data)
     data.flatten.each do |name, needed_data|
       name.each do |key, value|
       if key_name == key
-        puts needed_data
+        puts value
         puts lower_keys
         new_hash = name.merge(lower_keys)
       end
