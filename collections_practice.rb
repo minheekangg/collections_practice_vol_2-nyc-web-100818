@@ -56,7 +56,7 @@ def merge_data(keys, data)
     end
   end
   end
-  return name
+  return new_hash
 end
 
 def find_cool(array)
