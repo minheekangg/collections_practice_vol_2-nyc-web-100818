@@ -48,6 +48,7 @@ def merge_data(keys, data)
     data.flatten.each do |name, data|
       name.each do |key, value|
       if v2 == key
+        data[key][:first_name] = key
       end
       end
     end
