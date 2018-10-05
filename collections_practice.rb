@@ -51,7 +51,7 @@ def merge_data(keys, data)
       if key_name == key
         puts value
         puts lower_keys
-        new_hash = name.merge(lower_keys)
+        new_hash = value.merge(lower_keys)
       end
       end
     end
