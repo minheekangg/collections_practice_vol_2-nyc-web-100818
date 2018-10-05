@@ -49,6 +49,7 @@ def merge_data(keys, data)
       name.each do |key, value|
       if v2 == key
         data[key][:first_name] = key
+        puts data
       end
       end
     end
